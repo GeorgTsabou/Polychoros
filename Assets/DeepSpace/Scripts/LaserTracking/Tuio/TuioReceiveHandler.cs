@@ -185,7 +185,6 @@ namespace DeepSpace.LaserTracking
 		private void OnReceivedTrackInformation(TUIO.TuioCursor tuioCursor, TrackState state)
 		{
 			TrackRecord track = GetTrackById(tuioCursor.CursorID);
-			
 			track.state = state;
 			Vector2 absPos = TrackingSettings.GetScreenPositionFromRelativePosition(tuioCursor.Position.X, tuioCursor.Position.Y);
 			track.currentPos.x = absPos.x;
@@ -201,6 +200,7 @@ namespace DeepSpace.LaserTracking
 
 			SaveTrackToDict(track, createIfNotYetExisting: true);
 
+            //TrackRecord track2 = track;
 			_updatedTrackIds.Add(track.trackID);
 		}
 

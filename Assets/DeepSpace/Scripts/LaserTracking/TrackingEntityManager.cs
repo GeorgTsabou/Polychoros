@@ -11,7 +11,11 @@ namespace DeepSpace.LaserTracking
 
 		protected Dictionary<int, TrackingEntity> _trackingEntityDict = new Dictionary<int, TrackingEntity>();
 
-		[Tooltip("This transform can be null, if no parent is wanted.")]
+        public Dictionary<int, TrackingEntity> _trackingEntityDict2 = new Dictionary<int, TrackingEntity>();
+        public Vector2 position2;
+
+
+        [Tooltip("This transform can be null, if no parent is wanted.")]
 		public Transform trackSpawnParent = null;
 		[Tooltip("This prefab will be spawned for each track.")]
 		public GameObject TrackingEntityPrefab = null;
@@ -61,30 +65,52 @@ namespace DeepSpace.LaserTracking
 		{
 			Vector2 position = _trackingReceiveHandler.TrackingSettings.GetScreenPositionFromRelativePosition(trackRecord.relPos.x, trackRecord.relPos.y);
 			GameObject trackInstance = GameObject.Instantiate(TrackingEntityPrefab, new Vector3(position.x, position.y, 0), Quaternion.identity) as GameObject;
-			trackInstance.transform.SetParent(trackSpawnParent);
+
+       //    GameObject trackInstance2 = GameObject.Instantiate(TrackingEntityPrefab, new Vector3(-position.x, position.y + 5, 0), Quaternion.identity) as GameObject;
+
+
+            trackInstance.transform.SetParent(trackSpawnParent);
+        //    trackInstance2.transform.SetParent(trackSpawnParent);
 
             //Peristrofh 90 moires ston X gia na fainetai or8io
             trackInstance.transform.rotation = Quaternion.AngleAxis(-90, transform.right);
+            trackInstance.transform.rotation = Quaternion.AngleAxis(-90, transform.right);
 
             trackInstance.name = string.Format("PharusTrack_{0}", trackRecord.trackID);
+         //   trackInstance2.name = string.Format("copyPharusTrack_{0}", trackRecord.trackID);
 
-			TrackingEntity trackingEntity = trackInstance.GetComponent<TrackingEntity>();
-			trackingEntity.TrackID = trackRecord.trackID;
 
-			ApplyTrackData(trackingEntity, trackRecord);
+            TrackingEntity trackingEntity = trackInstance.GetComponent<TrackingEntity>();
+        //    TrackingEntity trackingEntity2 = trackInstance2.GetComponent<TrackingEntity>();
 
-			_trackingEntityDict.Add(trackingEntity.TrackID, trackingEntity);
-		}
+            trackingEntity.TrackID = trackRecord.trackID;
+     //       trackingEntity2.TrackID = trackRecord.trackID;
+
+
+            ApplyTrackData(trackingEntity, trackRecord);
+         //   ApplyTrackData(trackingEntity2, trackRecord);
+
+
+            _trackingEntityDict.Add(trackingEntity.TrackID, trackingEntity);
+      //      _trackingEntityDict2.Add(trackingEntity2.TrackID, trackingEntity2);
+            //maybe add Dict2?
+        }
 
 		public virtual void TrackUpdated(TrackRecord trackRecord)
 		{
 			TrackingEntity trackingEntity = null;
-			if (_trackingEntityDict.TryGetValue(trackRecord.trackID, out trackingEntity))
+            TrackingEntity trackingEntity2 = null;
+
+            if (_trackingEntityDict.TryGetValue(trackRecord.trackID, out trackingEntity))
 			{
 				ApplyTrackData(trackingEntity, trackRecord);
+               // ApplyTrackData(trackingEntity2, trackRecord);
 
-				trackingEntity.SetPosition(_trackingReceiveHandler.TrackingSettings.GetScreenPositionFromRelativePosition(trackRecord.relPos.x, trackRecord.relPos.y));
-			}
+                trackingEntity.SetPosition(_trackingReceiveHandler.TrackingSettings.GetScreenPositionFromRelativePosition(trackRecord.relPos.x, trackRecord.relPos.y));
+
+           //     trackingEntity2.SetPosition(_trackingReceiveHandler.TrackingSettings.GetScreenPositionFromRelativePosition(trackRecord.relPos.x, trackRecord.relPos.y + 100));
+
+            }
 			else
 			{
 				if (addUnknownTrackOnUpdate)
@@ -92,19 +118,24 @@ namespace DeepSpace.LaserTracking
 					TrackAdded(trackRecord);
 				}
 			}
-		}
+        }
 
 		public virtual void TrackRemoved(int trackID)
 		{
 			TrackingEntity trackingEntity = null;
-			if (_trackingEntityDict.TryGetValue(trackID, out trackingEntity))
+            TrackingEntity trackingEntity2 = null;
+            if (_trackingEntityDict.TryGetValue(trackID, out trackingEntity))
 			{
-				_trackingEntityDict.Remove(trackID);
+             //   _trackingEntityDict2.Remove(trackID);
+                _trackingEntityDict.Remove(trackID);
+               
 
-				if(trackingEntity != null)
+                if (trackingEntity != null)
 				{
-					Destroy(trackingEntity.gameObject);
-				}
+                 //   Destroy(trackingEntity2.gameObject);
+                    Destroy(trackingEntity.gameObject);
+
+                }
 			}
 		}
 

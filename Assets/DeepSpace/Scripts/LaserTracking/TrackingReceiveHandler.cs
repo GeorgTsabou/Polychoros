@@ -10,7 +10,12 @@ namespace DeepSpace.LaserTracking
 		protected List<ITrackingReceiver> _trackingReceiverList = new List<ITrackingReceiver>();
 		protected Dictionary<int, TrackRecord> _trackDict = new Dictionary<int, TrackRecord>();
 
-		public virtual TrackingSettings TrackingSettings { get; }
+        //2o dictionary
+        // protected Dictionary<int, TrackRecord> _trackDict2 = new Dictionary<int, TrackRecord>();
+
+
+
+        public virtual TrackingSettings TrackingSettings { get; }
 
 		protected virtual void OnDestroy()
 		{
@@ -75,5 +80,6 @@ namespace DeepSpace.LaserTracking
 				}
 			}
 		}
+
 	}
 }

@@ -129,7 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017956, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017956, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -167,10 +167,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6970587258198017962, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c6d86828d62a673479e40d74419b9d1b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
+--- !u!1 &182712923950058654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6970587258198017960, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
+  m_PrefabInstance: {fileID: 7076738596273343286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8452881000737309174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1691957348403497664, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
   m_PrefabInstance: {fileID: 7076738596273343286}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3938874256954433343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182712923950058654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49d0d2edcf6f9f41b34613c708bf343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
