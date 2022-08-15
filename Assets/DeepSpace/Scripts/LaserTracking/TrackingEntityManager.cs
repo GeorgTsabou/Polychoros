@@ -73,8 +73,7 @@ namespace DeepSpace.LaserTracking
         //    trackInstance2.transform.SetParent(trackSpawnParent);
 
             //Peristrofh 90 moires ston X gia na fainetai or8io
-            trackInstance.transform.rotation = Quaternion.AngleAxis(-90, transform.right);
-            trackInstance.transform.rotation = Quaternion.AngleAxis(-90, transform.right);
+          //  trackInstance.transform.rotation = Quaternion.AngleAxis(-90, transform.right);
 
             trackInstance.name = string.Format("PharusTrack_{0}", trackRecord.trackID);
          //   trackInstance2.name = string.Format("copyPharusTrack_{0}", trackRecord.trackID);
