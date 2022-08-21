@@ -165,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017960, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_Name
-      value: Cylinder Variant
+      value: Cylinder Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017960, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_TagString
@@ -174,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 6970587258198017962, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c6d86828d62a673479e40d74419b9d1b, type: 2}
+      objectReference: {fileID: 2100000, guid: 5236b453cecbf3540b05e614a6c6e95a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
 --- !u!1 &182712923950058654 stripped
@@ -192,7 +192,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691957348403497664, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
   m_PrefabInstance: {fileID: 7076738596273343286}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3183322692325587724
+--- !u!114 &2456406301813458772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,24 +204,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f8f979447c54247bcba0d5441e6081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _connection: {fileID: 11400000, guid: 449a9929e1aa3484bb76ae189463e409, type: 2}
+  _connection: {fileID: 0}
   _oscAddress: /unity
-  _dataType: 8
+  _dataType: 4
   _event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _intEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -230,7 +218,19 @@ MonoBehaviour:
       m_Calls: []
   _vector2Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 182712923950058642}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: LookAt
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 182712923950058642}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _vector3Event:
     m_PersistentCalls:
       m_Calls: []
@@ -242,19 +242,7 @@ MonoBehaviour:
       m_Calls: []
   _vector3IntEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 182712923950058642}
-        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
-        m_MethodName: set_parent
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _stringEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -265,11 +253,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182712923950058654}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c49d0d2edcf6f9f41b34613c708bf343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: 0
   offsetY: 0
-  offsetZ: -27
+  offsetZ: 0
+--- !u!114 &7729296176123254274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182712923950058654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962f089161b2d9e4aa0fd4f2d45c4d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 14
+  ScreenWidthPixel: 38.4
+  ScreenHeightPixel: 21.6

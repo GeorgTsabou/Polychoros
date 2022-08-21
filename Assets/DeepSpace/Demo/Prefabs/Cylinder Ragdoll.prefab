@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 6970587258198017962}
   - component: {fileID: 6970587258198017961}
   - component: {fileID: 6970587258198017957}
+  - component: {fileID: 6192629281809710209}
   m_Layer: 0
   m_Name: Cylinder Ragdoll
   m_TagString: Untagged
@@ -207,6 +208,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc47714ed9d88041b01f4ed33563ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6192629281809710209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970587258198017960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962f089161b2d9e4aa0fd4f2d45c4d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 14
+  ScreenWidthPixel: 38.4
+  ScreenHeightPixel: 21.6
 --- !u!1001 &8481094579475381607
 PrefabInstance:
   m_ObjectHideFlags: 0
