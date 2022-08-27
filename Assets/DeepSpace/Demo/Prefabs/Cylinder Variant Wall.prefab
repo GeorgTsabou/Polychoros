@@ -165,11 +165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017960, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_Name
-      value: Cylinder Variant 1
+      value: Cylinder Variant Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017960, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_TagString
-      value: trackedGO
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6970587258198017962, guid: 0ce7676b11e73ba4d928931cb2ede68e, type: 3}
       propertyPath: m_Materials.Array.data[0]
