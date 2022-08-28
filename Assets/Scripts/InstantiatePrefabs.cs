@@ -51,7 +51,7 @@ public class InstantiatePrefabs : MonoBehaviour {
 
                     if (cList.Count > 90)
                     {
-                        Debug.Log("Instance overflow. Deleting..: " + cList.Count);
+                      //  Debug.Log("Instance overflow. Deleting..: " + cList.Count);
                         Destroy(cList[0]);
                         cList.RemoveAt(0);
 

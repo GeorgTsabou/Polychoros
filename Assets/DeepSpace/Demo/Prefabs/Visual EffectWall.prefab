@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7575932113417190403}
   - component: {fileID: 7575932113417190402}
   - component: {fileID: 7575932113417190401}
-  - component: {fileID: 8432787304839488720}
+  - component: {fileID: -4726256302438254977}
   m_Layer: 0
-  m_Name: Visual Effect
-  m_TagString: trackedGO
+  m_Name: Visual EffectWall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc47714ed9d88041b01f4ed33563ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8432787304839488720
+--- !u!114 &-4726256302438254977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,9 +137,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7575932113417190405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49d0d2edcf6f9f41b34613c708bf343, type: 3}
+  m_Script: {fileID: 11500000, guid: 962f089161b2d9e4aa0fd4f2d45c4d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: -3
   offsetY: 0
-  offsetZ: -27
+  offsetZ: 14
+  ScreenWidthPixel: 38.4
+  ScreenHeightPixel: 21.6
