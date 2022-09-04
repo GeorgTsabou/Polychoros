@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 
 public class PackageTool
@@ -6,6 +6,6 @@ public class PackageTool
     [MenuItem("Package/Update Package")]
     static void UpdatePackage()
     {
-        AssetDatabase.ExportPackage("Assets/Kvant", "KvantLattice.unitypackage", ExportPackageOptions.Recurse);
+        AssetDatabase.ExportPackage("Assets/Kvant", "KvantSwarmMV.unitypackage", ExportPackageOptions.Recurse);
     }
 }
