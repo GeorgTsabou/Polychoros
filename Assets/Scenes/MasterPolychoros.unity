@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 50676695}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -5, y: 5, z: 0}
-  m_LocalScale: {x: 2.8378, y: 1, z: 2.024}
+  m_LocalScale: {x: 57.383156, y: 1, z: 2.024}
   m_Children: []
   m_Father: {fileID: 673804721}
   m_RootOrder: 4
@@ -1793,7 +1793,7 @@ Transform:
   m_GameObject: {fileID: 547088007}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 5, y: 5, z: 0}
-  m_LocalScale: {x: 2.6138, y: 1, z: 1}
+  m_LocalScale: {x: 52.853653, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 673804721}
   m_RootOrder: 5
@@ -4492,7 +4492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1259034365
 Transform:
   m_ObjectHideFlags: 0
@@ -4570,6 +4570,7 @@ GameObject:
   - component: {fileID: 1286597305}
   - component: {fileID: 1286597304}
   - component: {fileID: 1286597303}
+  - component: {fileID: 1286597306}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -4712,7 +4713,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.8502657, b: 0.7688679, a: 1}
   m_Intensity: 241.5415
-  m_Range: 59.355915
+  m_Range: 25.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4775,6 +4776,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1286597306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286597302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc274b5141314fe1bacae43c7d3b275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageAddress: /Range
+  fieldToAnimate: 3
 --- !u!1 &1295494749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5173,6 +5188,7 @@ MonoBehaviour:
   - {fileID: 162266285}
   - {fileID: 1504459790}
   - {fileID: 1259034364}
+  - {fileID: 1286597302}
 --- !u!4 &1504446057
 Transform:
   m_ObjectHideFlags: 0
@@ -6262,7 +6278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606630219}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 5, z: 5}
+  m_LocalPosition: {x: 0, y: 5, z: 34.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 673804721}
@@ -6989,7 +7005,7 @@ Transform:
   m_GameObject: {fileID: 1784742424}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 3.26, z: -2.63}
-  m_LocalScale: {x: 1, y: 1, z: 1.598}
+  m_LocalScale: {x: 1, y: 1, z: 18.469685}
   m_Children: []
   m_Father: {fileID: 673804721}
   m_RootOrder: 2
@@ -7629,7 +7645,6 @@ GameObject:
   - component: {fileID: 2059096379}
   - component: {fileID: 2059096380}
   - component: {fileID: 2059096381}
-  - component: {fileID: 2059096382}
   m_Layer: 0
   m_Name: Wall Camera
   m_TagString: Untagged
@@ -7842,40 +7857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74cdb05edabc3c4e8ad09a441a5229d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2059096382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059096375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9876cfb3adbd1164ea775505b5aebf1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  S3DEnabled: 1
-  swapLR: 0
-  userIPD: 1.6
-  virtualIPD: 1.6
-  matchUserIPD: 1
-  PPI: 96
-  pixelPitch: 0.265
-  hFOV: 90
-  GuiVisible: 0
-  GuiKey: 9
-  S3DKey: 268
-  increaseFovKey: 269
-  decreaseFovKey: 270
-  method: 0
-  interleavedType: 0
-  parentCam: 1
-  anaglyphLeftColor: {r: 1, g: 0, b: 0, a: 1}
-  anaglyphRightColor: {r: 0, g: 1, b: 1, a: 1}
-  cameraPrefab: {fileID: 0}
-  RTFormat: 9
-  setMatrixDirectly: 1
-  S3DMaterial: {fileID: 0}
 --- !u!1 &2065437914
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 //
 
-Shader "Kvant/SwarmMV/Surface"
+Shader "HDRP/Surface"
 {
     Properties
     {

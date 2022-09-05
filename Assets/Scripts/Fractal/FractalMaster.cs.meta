@@ -3,7 +3,8 @@ guid: 345f8d9f82bd845fc8939f36745e0981
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fractalShader: {fileID: 7200000, guid: d135fb6523b39409b829979ae009b927, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
