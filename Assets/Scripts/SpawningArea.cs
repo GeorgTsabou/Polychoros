@@ -44,4 +44,8 @@ public class SpawningArea : MonoBehaviour
             }
         }
     }
+
+    public void SpawnRate(float rate) {
+        RateOfSpawn = rate;
+    }
 }
