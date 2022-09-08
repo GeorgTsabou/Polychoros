@@ -107,8 +107,8 @@ GameObject:
   - component: {fileID: 4110155453889586890}
   - component: {fileID: 452076070698209845}
   m_Layer: 0
-  m_Name: AttractTargetWall
-  m_TagString: trackedWall
+  m_Name: AttractTargetFloor
+  m_TagString: trackedGO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
